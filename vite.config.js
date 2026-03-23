@@ -13,6 +13,11 @@ export default defineConfig({
       }
     }
   },
+  preview: {
+      host: '0.0.0.0',
+      port: parseInt(process.env.PORT || '4173'),
+      allowedHosts: ['.railway.app'],
+  },
   build: {
     outDir: 'dist',
     // outDir: '../solarpro-backend/src/main/resources/static',
